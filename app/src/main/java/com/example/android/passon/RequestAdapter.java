@@ -34,7 +34,6 @@ public class RequestAdapter extends RecyclerView.Adapter<RequestAdapter.ViewHold
             bookName=(TextView)view.findViewById(R.id.bookName);
             filter1=(TextView)view.findViewById(R.id.filter1);
             filter2=(TextView)view.findViewById(R.id.filter2);
-            favouritePost = (CheckBox)view.findViewById(R.id.favorite);
             request=(Button)view.findViewById(R.id.request);
             cardView=(CardView)view.findViewById(R.id.card_view);
 
@@ -60,7 +59,6 @@ public class RequestAdapter extends RecyclerView.Adapter<RequestAdapter.ViewHold
         holder.filter2.setText(post.getFilter2());
         holder.bookName.setText(post.getBookName());
         holder.bookPic.setVisibility(View.GONE);
-        holder.favouritePost.setChecked(true);
         if(holder.request==null) {
             Log.i("ReqAdapter", "Line 64");
         }

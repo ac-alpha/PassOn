@@ -33,7 +33,6 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.ViewHolder> {
             bookName=(TextView)view.findViewById(R.id.bookName);
             filter1=(TextView)view.findViewById(R.id.filter1);
             filter2=(TextView)view.findViewById(R.id.filter2);
-            favouritePost = (CheckBox)view.findViewById(R.id.favorite);
             request=(Button)view.findViewById(R.id.request);
         }
     }
@@ -57,7 +56,6 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.ViewHolder> {
         holder.filter2.setText(post.getFilter2());
         holder.bookName.setText(post.getBookName());
         holder.bookPic.setImageResource(R.drawable.pic);
-        holder.favouritePost.setChecked(true);
         holder.request.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
